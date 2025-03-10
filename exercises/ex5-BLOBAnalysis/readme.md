@@ -113,7 +113,7 @@ There is an example program called `Ex5-BlobAnalysisInteractive.py` in the [exer
 With that program, you can explore different BLOB features interactively. It requires installation of `plotly`:
 
 ```
-conda install -c plotly plotly=5.10.0
+conda install -c plotly plotly=6.0.0
 ```
 
 
