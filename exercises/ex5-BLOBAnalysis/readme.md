@@ -129,6 +129,11 @@ The images used for the exercise is acquired by the Danish company [Chemometec](
 
 The raw images from the Cytometer are 1920x1440 pixels and each pixel is 16 bit (values from 0 to 65535). The resolution is 1.11 $\mu m$ / pixel.
 
+In this exercise, you need to install the python package imagecodecs to read a .tiff file:
+```Shell
+conda install imagecodecs
+```
+
 To make it easier to develop the cell counting program we start by working with smaller areas of the raw images. The images are also converted to 8 bit grayscale images:
 
 ```python
