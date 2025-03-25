@@ -93,7 +93,7 @@ Now we will try some filters on an artificial image with different types of nois
 
 ### Exercise 3
 
-Read and show the image **Gaussian.png** from the [exercise material](https://github.com/RasmusRPaulsen/DTUImageAnalysis/blob/main/exercises/ex4-ImageFiltering/data/).
+Read and show the image **Gaussian.png** from the [exercise material](https://github.com/RasmusRPaulsen/DTUImageAnalysis/blob/main/exercises/ex4-ImageFiltering/data/). Convert the image to grayscale. Although it already appears to be grayscale, black-and-white images are sometimes stored as 3-channel RGB with identical values in each channel.
 
 Create a mean filter with normalized weights:
 ```python
