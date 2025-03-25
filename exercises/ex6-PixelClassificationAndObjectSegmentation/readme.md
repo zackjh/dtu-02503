@@ -101,7 +101,7 @@ Let us start by examining one of the CT scan slices from the training set. You c
 
 ```python
 in_dir = "data/"
-ct = dicom.read_file(in_dir + 'Training.dcm')
+ct = dicom.dcmread(in_dir + 'Training.dcm')
 img = ct.pixel_array
 print(img.shape)
 print(img.dtype)
