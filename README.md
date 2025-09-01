@@ -1,10 +1,10 @@
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
-# DTU Course 02502 Image Analysis
+# DTU Course 02503 Image Analysis (Bachelor)
 
 An introductory course to image analysis at the [Technical University of Denmark](https://www.dtu.dk/).
 
-This repository contains exercises and data for the DTU course [02502 Image Analysis](http://courses.compute.dtu.dk/02502/)
+This repository contains exercises and data for the DTU course [02503 Image Analysis](https://courses.compute.dtu.dk/02503/)
 
 ## Exercises
 
