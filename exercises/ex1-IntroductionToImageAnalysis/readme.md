@@ -6,7 +6,7 @@ This exercise introduces image analysis in Python.
 
 After completing this exercise, the student should be able to do the following:
 
-1. Install and use the [Anaconda](https://www.anaconda.com/products/distribution) framework.
+1. Install and use the [Conda](https://pythonsupport.dtu.dk/install/python.html) framework.
 2. Create and activate a **conda virtual environment**.
 3. Install Python packages in a virtual environment.
 4. Import Python packages.
@@ -37,67 +37,9 @@ After completing this exercise, the student should be able to do the following:
 29. Visualize individual DICOM files and select appropriate gray value mapping limits to enhance contrast.
 
 
-## Anaconda and virtual environments
+## Conda, VS Code and virtual environments
 
-We strongly recommend to use the [Anaconda](https://www.anaconda.com/products/distribution) framework for your Python installation and other tools. It can be installed from here: [Anaconda](https://www.anaconda.com/products/distribution).
-
-When you have installed Anaconda, you can start by creating a **virtual environment**. A virtual environment is a practical way of keeping a specific Python interpreter, installed libraries and scrips isolated. So if you have several projects that each requires different libraries, they can be kept separate.
-
-### Creating and activating a conda environment
-Start an **Anaconda prompt** and do:
-
-```Shell
-conda create --name course02502 python=3.11
-conda activate course02502
-```
-
-here a new virtual environment called `course02502` is created and activated.
-
-## Python scripts or Notebooks
-
-In this course, there are basically two ways that you can do the exercises:
-
-1. **Jupyter notebooks** is a web-based interactive platform, where you can run Python code. We recommend using [JupyterLab](https://jupyter.org/) that can be found trough the Anaconda framework. 
-2. **Python scripts** are text files with the `.py` ending (for example `myscript.py`). Python scripts are normally edited and executed using a dedicated **code editor (IDE)**. We recommend [Spyder](https://www.spyder-ide.org/), [PyCharm](https://www.jetbrains.com/products/compare/?product=pycharm&product=pycharm-ce) or [Visual Studio Code](https://code.visualstudio.com/).
-
-
-We provide the exercise code as pieces of Python code and it is your decision if you want to use them in a Notebook or in a script.
-
-Please see [Figures in notebooks](FigsInNotebooks) for details on figures in notebooks.
-
-If you need an introduction or a refresher to Jupyter notebooks, Python, NumPY and Matplotlib, you can find a good introduction at: [Introduction to Jupyter notebooks and Python](https://github.com/nabriis/Jupyter_Python_Introduction).
-
-It is important that your Notebook, Spyder, Pycharm or other development tool is set to use the virtual environment that you created before.
-
-
-## Installing Python packages
-
-In this course, we will use several Python packages. We will install them as needed. To install the packages
-- [scikit-image (skimage)](https://scikit-image.org/)
-- [matplotlib](https://matplotlib.org/stable/)
-- [pydicom](https://github.com/pydicom/pydicom)
-- ipykernel (only necessary if using notebooks)
-
-start an **Anaconda prompt** and do:
-
-```Shell
-conda activate course02502
-pip install scikit-image matplotlib pydicom ipykernel
-```
-
-
-## Exercise data and material
-
-The data and material needed for this exercise can be found here: [exercise data and material](data)
-
-Start by creating and exercise folder where you keep your data, Python scripts or Notebooks. Download or clone the data and material and place them in this folder.
-
-### Using Github to get all material and data at once
-
-You can get all the exercise material including the data by (for example):
-- download the current version of the exercise and data as a .zip file. Do this by pressing the green `<>Code` button and select the **Download ZIP** option.
-- Clone the repository using a [Git](https://git-scm.com/) client.
-
+See the setup guide for instructions on how to install and setup Conda, VS Code and virtual environments. The guide also includes some navigation tips and tricks in VS code for an easy start.  
 
 ## Importing relevant libraries
 
@@ -150,30 +92,6 @@ print(im_org.dtype)
 
 
 ```python
-io.imshow(im_org)
-plt.title('Metacarpal image')
-io.show()
-```
-
-If you are using notebooks you have to change the matplotlib backend to interact with the pixels in the image. If you want a pop up window for the image install PyQt:
-```Shell
-pip install PyQt6
-```
-and then show the image with the new backend
-```python
-%matplotlib qt
-io.imshow(im_org)
-plt.title('Metacarpal image')
-io.show()
-```
-
-If you want the image to stay inside the notebook install ipympl
-```Shell
-pip install ipympl
-```
-and then show the image with the new backend (you may have to close the window and open agian before the backend works)
-```python
-%matplotlib widget
 io.imshow(im_org)
 plt.title('Metacarpal image')
 io.show()
