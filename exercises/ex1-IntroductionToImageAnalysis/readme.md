@@ -39,7 +39,7 @@ After completing this exercise, the student should be able to do the following:
 
 ## Conda, VS Code and virtual environments
 
-See the setup guide for instructions on how to install and setup Conda, VS Code and virtual environments. The guide also includes some navigation tips and tricks in VS code for an easy start.  
+See the [setup guide](setup.md) for instructions on how to install and setup Conda, VS Code and virtual environments. The guide also includes some navigation tips and tricks in VS code for an easy start.  
 
 ## Importing relevant libraries
 
